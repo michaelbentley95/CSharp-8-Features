@@ -1,4 +1,4 @@
-﻿{
+{
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
@@ -12,16 +12,20 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "JWT_SECRET": "fxeP4AMaTX9AXs9gAJAmrvckBe9ZbbUpNU8CJovJgd8gzuKEhQa2RQyJjcznyHnQ7TqRkLnooRRPKFgq",
+        "CONNECTION_STRING": "Server=(localdb)\\\\mssqllocaldb;Database=Identity;Trusted_Connection=True",
+        "ISSUER": "Saas.Identity",
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "AUDIENCE": "All"
       }
     },
     "Identity": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
     }
   }
 }
