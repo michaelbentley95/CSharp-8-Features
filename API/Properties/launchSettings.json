@@ -1,0 +1,35 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:11796",
+      "sslPort": 0
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "weatherforecast",
+      "environmentVariables": {
+        "JWT_SECRET": "fxeP4AMaTX9AXs9gAJAmrvckBe9ZbbUpNU8CJovJgd8gzuKEhQa2RQyJjcznyHnQ7TqRkLnooRRPKFgq",
+        "CONNECTION_STRING": "Server=(localdb)\\\\mssqllocaldb;Database=SaaS;Trusted_Connection=True",
+        "ISSUER": "Saas.Identity",
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "AUDIENCE": "All"
+      },
+      "jsWebView2Debugging": true
+    },
+    "API": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "weatherforecast",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:5000"
+    }
+  }
+}
