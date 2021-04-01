@@ -1,7 +1,7 @@
 using AutoMapper;
 using Identity.Data;
 using Identity.Models;
-using Identity.ViewModels;
+using Common.ViewModels;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;

@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Identity.Models;
-using Identity.ViewModels;
+using Common.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;

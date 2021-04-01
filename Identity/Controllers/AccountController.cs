@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Identity.Data;
-using Identity.Models;
-using Identity.ViewModels;
+using Common.Models;
+using Common.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -14,6 +14,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using Identity.Models;
 
 namespace Identity.Controllers
 {

@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using API.Data;
-using API.Models;
+using Common.Models;
 
-namespace API.Controllers
+namespace Shared.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
