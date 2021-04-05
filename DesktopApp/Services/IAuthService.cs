@@ -10,5 +10,6 @@ namespace DesktopApp.Services
     {
         Task<string> SignUp(UserSignUpVM user);
         Task<string> SignIn(UserSignInVM user);
+        string GetAccessToken();
     }
 }

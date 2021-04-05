@@ -10,16 +10,21 @@ namespace DesktopApp.Services
 {
     class AuthService : IAuthService
     {
-        private string _signUpEndpoint = "https://localhost:44365/api/users/signup";
-        private string _signInEndpoint = "https://localhost:44365/api/users/signin";
+        private string _signUpEndpoint = "https://localhost:43744/api/users/signup";
+        private string _signInEndpoint = "https://localhost:43744/api/users/signin";
+        private string _currentAccessToken = "";
 
         private static HttpClient _httpClient = new HttpClient();
-        public Task<string> SignIn(UserSignInVM user)
+        public async Task<string> SignIn(UserSignInVM user)
         {
-            throw new NotImplementedException();
+            return await AuthAction(_signInEndpoint, user);
         }
 
-        public Task<string> SignUp(UserSignUpVM user)
+        public async Task<string> SignUp(UserSignUpVM user)
+        {
+            return await AuthAction(_signUpEndpoint, user);
+        }
+        public string GetAccessToken()
         {
             throw new NotImplementedException();
         }
@@ -37,12 +42,13 @@ namespace DesktopApp.Services
                 string accessToken = await response.Content.ReadAsStringAsync();
                 if (accessToken.Length == 0)
                 {
-                    return null;
+                    _currentAccessToken = null;
                 }
                 else
                 {
-                    return accessToken;
+                    _currentAccessToken = accessToken;
                 }
+                return _currentAccessToken;
             }
         }
     }
