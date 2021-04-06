@@ -8,22 +8,27 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="2*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-        <StackPanel Grid.Column="1" VerticalAlignment="Stretch">
-            <TextBlock FontSize="18" HorizontalAlignment="Center" Margin="0,25,0,15">Sign Up</TextBlock>
-            <Label>First Name</Label>
-            <TextBox x:Name="FirstNameBox" Margin="0,0,0,15"></TextBox>
-            <Label>Last Name</Label>
-            <TextBox x:Name="LastNameBox" Margin="0,0,0,15"></TextBox>
-            <Label>Email</Label>
-            <TextBox x:Name="EmailBox" Margin="0,0,0,15"></TextBox>
-            <Label>Password</Label>
-            <TextBox x:Name="PasswordBox" Margin="0,0,0,15"></TextBox>
-            <Button>Sign Up</Button>
-        </StackPanel>
+        <DockPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="1" Grid.RowSpan="5" Background="AliceBlue">
+            <StackPanel Orientation="Vertical">
+                <Button Padding="0,6,0,6">Sign Up</Button>
+                <Button Padding="0,6,0,6">Sign In</Button>
+                <Button Padding="0,6,0,6">Dashboard</Button>
+                <Button Padding="0,6,0,6">Subscriptions</Button>
+            </StackPanel>
+        </DockPanel>
     </Grid>
 </Window>

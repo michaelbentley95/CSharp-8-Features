@@ -26,7 +26,7 @@ namespace DesktopApp.Services
         }
         public string GetAccessToken()
         {
-            throw new NotImplementedException();
+            return _currentAccessToken;
         }
 
         public async Task<string> AuthAction<T>(string endpoint, T content)
